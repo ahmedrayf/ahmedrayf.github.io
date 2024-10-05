@@ -20,44 +20,41 @@ a:hover {
 /* Container Structure */
 .container {
     display: flex;
-    min-height: 100vh;
     flex-wrap: wrap;
-    width: 100%; /* Ensures the container takes full width on desktop */
+    width: 100%;
 }
 
 /* Sidebar */
 .sidebar {
-    width: 300px; /* Fixed width for sidebar on desktop */
-    background-color: #343a40;
+    width: 100%; /* Full width for sidebar on mobile */
+    max-width: 300px; /* Fixed width for sidebar on desktop */
+    background-color: #343a40; /* Dark gray for sidebar */
     color: white;
-    padding: 0;
+    padding: 20px;
     box-sizing: border-box;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    min-height: 100vh; /* Sidebar takes full height */
+    justify-content: flex-start; /* Align content at the top */
 }
 
 /* Profile Info Section */
 .profile-info {
-    background-color: #007bff; /* Background color for profile info */
     text-align: center;
-    padding: 40px 20px;
-    border-bottom: 5px solid #f39c12; /* Adds a nice bottom border */
+    padding: 20px 0;
     margin-bottom: 20px;
 }
 
 .profile-info h1 {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 .profile-info .title {
     font-size: 20px;
-    color: white;
-    margin-bottom: 15px;
+    color: #f39c12; /* Gold color for the job title */
+    margin-bottom: 10px;
 }
 
 .sidebar p {
@@ -72,7 +69,7 @@ a:hover {
     padding: 40px;
     background-color: white;
     box-sizing: border-box;
-    width: calc(100% - 300px); /* Adjusts the main content width to fill remaining space */
+    width: 100%; /* Full width on mobile */
 }
 
 .main-content h2 {
@@ -116,15 +113,32 @@ a:hover {
     margin-bottom: 40px;
 }
 
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
+/* Responsive Design for Desktop and Mobile */
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: row; /* Sidebar and content side by side */
+    }
+
     .sidebar {
-        width: 100%; /* Sidebar takes full width on mobile */
-        min-height: auto; /* Remove fixed height */
+        width: 300px; /* Fixed width for sidebar on larger screens */
+        height: 100vh; /* Full height for sidebar on desktop */
+        padding-top: 40px; /* Padding at the top for better spacing */
     }
 
     .main-content {
-        width: 100%; /* Main content takes full width on mobile */
-        padding: 20px;
+        width: calc(100% - 300px); /* Main content takes remaining space */
+    }
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Adjust height based on content */
+    }
+
+    .main-content {
+        width: 100%; /* Full width for main content on mobile */
+        padding: 20px; /* Reduce padding on smaller screens */
     }
 }
