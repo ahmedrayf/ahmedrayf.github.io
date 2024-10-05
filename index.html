@@ -7,72 +7,90 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Ahmed Rayf</h1>
-        <p>Cairo • 01008309253 • <a href="mailto:ahmedrayf@hotmail.com">ahmedrayf@hotmail.com</a> • <a href="https://www.linkedin.com/in/ahmedrayf/">LinkedIn</a></p>
-        <h2>Java Developer</h2>
-        <p>Ambitious Java Developer with expertise in programming analysis, application analysis, and design. Team player with knowledge of development tools and languages.</p>
-    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-info">
+                <h1>Ahmed Rayf</h1>
+                <p class="title">Java Developer</p>
+                <p>Cairo, Egypt</p>
+                <p><a href="mailto:ahmedrayf@hotmail.com">ahmedrayf@hotmail.com</a></p>
+                <p><a href="https://www.linkedin.com/in/ahmedrayf/">LinkedIn Profile</a></p>
+            </div>
 
-    <section>
-        <h2>Education</h2>
-        <p>Bachelor's degree in Applied Statistics</p>
-        <p>Kafr El-Sheikh University • GPA: 74.6% (01/2016 - 12/2020)</p>
-        <p>Study Domain: Computer Science & Statistics</p>
-    </section>
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Java (8 and latest), Multithreading, JDBC</li>
+                    <li>Spring Boot, Spring Security, Hibernate, Web services</li>
+                    <li>Microservices, Docker, Kubernetes</li>
+                    <li>SQL Server, MySQL</li>
+                    <li>OOP, SOLID Principles, Design Patterns, ACID</li>
+                </ul>
+            </div>
 
-    <section>
-        <h2>Work Experience</h2>
-        <h3>Java Software Developer</h3>
-        <p>Telecom Egypt, Cairo, Egypt (11/2021 - Present)</p>
-        <ul>
-            <li>Implemented microservices architecture using Java, Spring Boot, Docker, and Kubernetes on Azure.</li>
-            <li>Developed RESTful APIs to enhance front-end and back-end system communication.</li>
-            <li>Designed project management functionalities, including user assignment, progress tracking, and deadline management.</li>
-            <li>Administered user accounts, roles, and permissions, ensuring security and efficiency.</li>
-            <li>Built a comprehensive attendance management system tracking attendance across locations.</li>
-        </ul>
-    </section>
+            <div class="certifications">
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Spring: Framework in Depth (LinkedIn, 04/2021)</li>
+                    <li>Spring & Hibernate (Udemy, 04/2021)</li>
+                    <li>Java Certificate (Emak Academy, 09/2019)</li>
+                </ul>
+            </div>
+        </aside>
 
-    <section>
-        <h2>Projects</h2>
-        <h3>WE Attendance</h3>
-        <ul>
-            <li>Automated deployment using Docker and Kubernetes, improving system scalability and reliability.</li>
-            <li>Technologies: Spring, SQL, Docker, Kubernetes</li>
-        </ul>
+        <main class="main-content">
+            <section class="summary">
+                <h2>About Me</h2>
+                <p>Ambitious Java Developer versed in following established procedures and working independently. Offering technical expertise in programming analysis, application design, and problem-solving. Excellent team player with in-depth knowledge of development tools and programming languages.</p>
+            </section>
 
-        <h3>Digital Receipt – Go Green</h3>
-        <ul>
-            <li>Developed a digital solution to replace physical receipts with PDFs, minimizing paper usage.</li>
-            <li>Technologies: Spring, AES, Thymeleaf</li>
-        </ul>
+            <section class="experience">
+                <h2>Work Experience</h2>
+                <h3>Telecom Egypt, Cairo</h3>
+                <p><strong>Java Software Developer</strong> (11/2021 - Present)</p>
+                <ul>
+                    <li>Implemented microservices architecture using Java, Spring Boot, Docker, and Kubernetes on Azure.</li>
+                    <li>Developed RESTful APIs using Spring Boot to facilitate communication between front-end and back-end systems, improving system efficiency.</li>
+                    <li>Designed and deployed project management functionalities, including user assignment, progress tracking, and deadline management.</li>
+                    <li>Administered user accounts, roles, and permissions to ensure secure access control.</li>
+                    <li>Developed a comprehensive attendance management system to track employee attendance across multiple locations.</li>
+                    <li>Leveraged Docker and Kubernetes to automate deployment processes, enhancing system scalability and reliability.</li>
+                    <li>Technologies used: Spring Boot, SQL, Docker, Kubernetes.</li>
+                </ul>
+            </section>
 
-        <h3>Network Inventory</h3>
-        <ul>
-            <li>Streamlined terminal collection and tracking via a mobile app and web portal.</li>
-            <li>Technologies: Spring Boot, Spring Security, SQL</li>
-        </ul>
-    </section>
+            <section class="projects">
+                <h2>Projects</h2>
+                <h3>WE Attendance</h3>
+                <ul>
+                    <li>Implemented microservices architecture using Java, Spring Boot, Docker, and Kubernetes on Azure.</li>
+                    <li>Deployed RESTful APIs using Spring Boot to enable seamless communication between front-end and back-end systems.</li>
+                    <li>Used Docker and Kubernetes to automate deployments, reducing deployment time and improving system reliability.</li>
+                    <li>Technologies: Spring Boot, SQL, Docker, Kubernetes.</li>
+                </ul>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Java: Java 8 and latest, Multithreading, JDBC</li>
-            <li>Spring & Hibernate: Spring Core, Spring Boot, Spring Data, Spring Security, Hibernate, Web services</li>
-            <li>Concepts: OOP, SOLID Principles, Design Patterns, ACID, Microservices</li>
-            <li>Database: SQL Server, MySQL</li>
-            <li>Technologies: Docker, Kubernetes</li>
-        </ul>
-    </section>
+                <h3>Digital Receipt – Go Green</h3>
+                <ul>
+                    <li>Led the development of the Digital GoGreen project to replace physical receipts with PDF versions, reducing paper usage and supporting environmental sustainability.</li>
+                    <li>Collaborated with stakeholders to integrate the solution, aligning with environmental goals.</li>
+                    <li>Technologies: Spring, AES, Thymeleaf.</li>
+                </ul>
 
-    <section>
-        <h2>Certifications</h2>
-        <ul>
-            <li>Spring: Framework in Depth (LinkedIn, 04/2021)</li>
-            <li>Spring & Hibernate (Udemy, 04/2021)</li>
-            <li>Java Certificate (Emak Academy, 09/2019)</li>
-        </ul>
-    </section>
+                <h3>Network Inventory</h3>
+                <ul>
+                    <li>Streamlined the collection and tracking of landline terminals using a mobile app and web portal, improving operational efficiency.</li>
+                    <li>Enabled users to identify and report free terminals, optimizing the recovery of unused terminals.</li>
+                    <li>Reduced reliance on eligibility checks by enabling customers to quickly identify available landline connections.</li>
+                    <li>Technologies: Spring Boot, Spring Security, SQL.</li>
+                </ul>
+            </section>
+
+            <section class="education">
+                <h2>Education</h2>
+                <p><strong>Bachelor's Degree in Applied Statistics</strong> (Computer Science & Statistics)</p>
+                <p>Kafr El-Sheikh University • GPA: 74.6% (01/2016 - 12/2020)</p>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
