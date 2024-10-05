@@ -22,21 +22,21 @@ a:hover {
     display: flex;
     min-height: 100vh;
     flex-wrap: wrap;
+    width: 100%; /* Ensures the container takes full width on desktop */
 }
 
 /* Sidebar */
 .sidebar {
-    width: 100%;
-    max-width: 300px;
+    width: 300px; /* Fixed width for sidebar on desktop */
     background-color: #343a40;
     color: white;
     padding: 0;
     box-sizing: border-box;
     flex-shrink: 0;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center content vertically */
+    min-height: 100vh; /* Sidebar takes full height */
 }
 
 /* Profile Info Section */
@@ -72,6 +72,7 @@ a:hover {
     padding: 40px;
     background-color: white;
     box-sizing: border-box;
+    width: calc(100% - 300px); /* Adjusts the main content width to fill remaining space */
 }
 
 .main-content h2 {
@@ -115,13 +116,15 @@ a:hover {
     margin-bottom: 40px;
 }
 
-/* Responsive Design */
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
     .sidebar {
-        max-width: 100%;
+        width: 100%; /* Sidebar takes full width on mobile */
+        min-height: auto; /* Remove fixed height */
     }
 
     .main-content {
+        width: 100%; /* Main content takes full width on mobile */
         padding: 20px;
     }
 }
