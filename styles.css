@@ -20,41 +20,44 @@ a:hover {
 /* Container Structure */
 .container {
     display: flex;
+    min-height: 100vh;
     flex-wrap: wrap;
-    width: 100%;
 }
 
 /* Sidebar */
 .sidebar {
-    width: 100%; /* Full width for sidebar on mobile */
-    max-width: 300px; /* Fixed width for sidebar on desktop */
-    background-color: #343a40; /* Dark gray for sidebar */
+    width: 100%;
+    max-width: 300px;
+    background-color: #343a40;
     color: white;
-    padding: 20px;
+    padding: 0;
     box-sizing: border-box;
     flex-shrink: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align content at the top */
+    justify-content: center; /* Center content vertically */
 }
 
 /* Profile Info Section */
 .profile-info {
+    background-color: #007bff; /* Background color for profile info */
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 20px;
+    border-bottom: 5px solid #f39c12; /* Adds a nice bottom border */
     margin-bottom: 20px;
 }
 
 .profile-info h1 {
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 .profile-info .title {
     font-size: 20px;
-    color: #f39c12; /* Gold color for the job title */
-    margin-bottom: 10px;
+    color: white;
+    margin-bottom: 15px;
 }
 
 .sidebar p {
@@ -69,7 +72,6 @@ a:hover {
     padding: 40px;
     background-color: white;
     box-sizing: border-box;
-    width: 100%; /* Full width on mobile */
 }
 
 .main-content h2 {
@@ -113,32 +115,13 @@ a:hover {
     margin-bottom: 40px;
 }
 
-/* Responsive Design for Desktop and Mobile */
-@media (min-width: 768px) {
-    .container {
-        display: flex;
-        flex-direction: row; /* Sidebar and content side by side */
-    }
-
+/* Responsive Design */
+@media (max-width: 768px) {
     .sidebar {
-        width: 300px; /* Fixed width for sidebar on larger screens */
-        height: 100vh; /* Full height for sidebar on desktop */
-        padding-top: 40px; /* Padding at the top for better spacing */
+        max-width: 100%;
     }
 
     .main-content {
-        width: calc(100% - 300px); /* Main content takes remaining space */
-    }
-}
-
-@media (max-width: 767px) {
-    .sidebar {
-        width: 100%; /* Full width on mobile */
-        height: auto; /* Adjust height based on content */
-    }
-
-    .main-content {
-        width: 100%; /* Full width for main content on mobile */
-        padding: 20px; /* Reduce padding on smaller screens */
+        padding: 20px;
     }
 }
