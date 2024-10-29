@@ -36,11 +36,16 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* Center content vertically */
 }
 
+/* Profile Info Section */
 .profile-info {
+
+    /* Background color for profile info */
     text-align: center;
     padding: 40px 20px;
+    /* Adds a nice bottom border */
     margin-bottom: 20px;
 }
 
@@ -106,80 +111,9 @@ a:hover {
     line-height: 1.2;
 }
 
-/* Skill Bar */
-.skill-bar {
-    margin-bottom: 20px;
-}
-
-.skill-bar span {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.bar {
-    background-color: #e9ecef;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-}
-
-.progress {
-    height: 20px;
-    background-color: #007bff;
-    width: 0;
-    transition: width 1s ease-in-out;
-}
-
-/* Collapsible Section */
-.content {
-    display: block;
-}
-
-.toggle-btn {
-    background: none;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-/* Form Styles */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form input, form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Dark Mode */
-body.dark-mode {
-    background-color: #343a40;
-    color: #f8f9fa;
-}
-
-body.dark-mode .main-content {
-    background-color: #495057;
-}
-
-body.dark-mode a {
-    color: #17a2b8;
-}
-
-body.dark-mode .progress {
-    background-color: #17a2b8;
+/* Section Styling */
+.main-content section {
+    margin-bottom: 40px;
 }
 
 /* Responsive Design */
